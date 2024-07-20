@@ -9,7 +9,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/bg.jpg") top no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -79,7 +79,6 @@ h6 {
   line-height: 1;
   display: inline-block;
 }
-
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
@@ -87,7 +86,7 @@ h6 {
 }
 
 #header h2 span {
-  color: #fff;
+  color: #4ff921;
   border-bottom: 2px solid #18d26e;
   padding-bottom: 6px;
 }
@@ -1043,7 +1042,7 @@ section .container {
   background: rgba(255, 255, 255, 0.08);
 }
 
-.contact .php-email-form .error-message {
+/* .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
   background: #ed3c0d;
@@ -1054,7 +1053,7 @@ section .container {
 
 .contact .php-email-form .error-message br+br {
   margin-top: 25px;
-}
+} */
 
 .contact .php-email-form .sent-message {
   display: none;
