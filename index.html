@@ -37,7 +37,7 @@
 
       </div>
       <h1><a href="index.html">Satkrit Bhandari</a></h1>
-      <h2>I'm a passionate <span>graphic designer</span> from Kathmandu</h2>
+      <h2>A <span> Tech-Savvy </span> professional skilled in <br> Computer Hardware, Networking, Photoshop <br> & Web Development.</h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -53,7 +53,9 @@
       <div class="social-links">
         <a href="https://www.facebook.com/satkrit.bhandari" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/its_me_satkrit/" class="instagram"><i class="bi bi-instagram"></i></a>
-      </div>
+        <a href="https://www.linkedin.com/in/satkrit-bhandari-a04536322/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+    
 
     </div>
   </header><!-- End Header -->
@@ -74,23 +76,45 @@
           <img src="assets/img/me.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Graphic Designer</h3>
+          <h3>Tech-Savvy</h3>
           <p class="fst-italic">
-            As a personal graphic designer, I offer bespoke design solutions tailored to meet the unique needs and preferences of 
-            individual clients. With a focus on personalized service and attention to detail. 
+            I'm Satkrit Bhandari, a passionate tech enthusiast,
+             always eager to explore the latest in technology and innovation.
+              This website is my personal hub, where I share my journey through the ever-evolving world of tech.
+               Whether it’s coding, hardware, software development, or emerging trends, I’m always diving deep to 
+               understand how things work and how they can be improved. 
           </p>
           <div class="row">
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>2 Sept 2003</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+977 9818400974</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Jorpati,Kathmandu</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span id="birthday">2 Sept 2003</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age"></span></li>
+                <script>
+                  function calculateAge() {
+                      const birthday = new Date('2003-09-02');  // Your birthdate
+                      const today = new Date();
+                      let age = today.getFullYear() - birthday.getFullYear();
+                      const month = today.getMonth();
+                      const day = today.getDate();
+                      
+                      // Adjust age if the birthday hasn't happened yet this year
+                      if (month < birthday.getMonth() || (month === birthday.getMonth() && day < birthday.getDate())) {
+                          age--;
+                      }
+                      
+                      document.getElementById("age").textContent = age;  // Display the age in the span
+                  }
+                  
+                  window.onload = calculateAge;
+              </script>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+977 9818400974, 9767934698</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Gender:</strong> <span>Male</span></li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor Running</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor In Information Management(present)</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Jorpati,Kathmandu</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>satkrit15@gamil.com</span></li>
               </ul>
             </div>
@@ -114,25 +138,10 @@
       <div class="row skills-content">
 
         <div class="col-lg-6">
-
           <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
+            <span class="skill">Computer Hardware<i class="val">100%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -143,27 +152,56 @@
             </div>
           </div>
 
+          <div class="progress">
+            <span class="skill">HTML <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">CSS <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
         </div>
 
         <div class="col-lg-6">
 
           <div class="progress">
-            <span class="skill">PHP <i class="val">80%</i></span>
+            <span class="skill">PHP <i class="val">75%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
           <div class="progress">
-            <span class="skill">Photoshop <i class="val">55%</i></span>
+            <span class="skill">Photoshop <i class="val">75%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
+          
+
           <div class="progress">
-            <span class="skill">Hardware<i class="val">100%</i></span>
+            <span class="skill">React<i class="val">70%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">Canva<i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -191,13 +229,14 @@
               <li>Service Focused</li>
               <li>Accepting Challenges</li>
               <li>Team spirit</li>
+              <li>Honesty</li>
+              <li>Leadership</li>
             </ul>
-            </p>
           </div>
 
           <h3 class="resume-title">Education</h3>
           <div class="resume-item">
-            <h4>Bachelor Running,+2,SEE</h4>
+            <h4>Bachelor In Information Management(present) , +2 , SEE</h4>
             </div>
             <h3 class="resume-title">Career Objective</h3> 
           <div class="resume-item">
@@ -207,19 +246,78 @@
                learning and commitment.
             </p>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Graphic design</h3>
+          <h3 class="resume-title">Languages</h3>
           <div class="resume-item">
-            
-            <h5>2021-2023</h5>
             <p>
             <ul>
-              <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+              <li>Nepali</li>
+                <li>English</li> 
+                <li>Hindi</li>
             </ul>
             </p>
           </div>
+          <h3 class="resume-title">Experience</h3>
+          <div class="resume-item">
+            <p>
+            <ul>
+              <li>5yrs Experience in Computer Hardware & Networking</li>
+              <li>2ys Experience in Teaching Computer Hardware & Networking</li>
+              <li>Freelancer</li>
+            </ul>
+            </p>
+          </div>
+
         </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Comptia A+</h3>
+          <div class="resume-item">
+            
+            <h5>2021</h5>
+            <p>
+            <ul>
+              <li>Certified in CompTIA A+, I specialize in IT support, troubleshooting, and hardware/software solutions to ensure seamless system performance and user satisfaction.</li>
+            </ul>
+            </p>
+          </div>
+          <h3 class="resume-title">Graphic design</h3>
+          <div class="resume-item">
+            
+            <h5>2023-Current</h5>
+            <p>
+            <ul>
+              <li>Developed numerous marketing programs (logos, brochures, presentations, and advertisements).</li>
+            </ul>
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="resume-title">Hobbies</h3>
+            <div class="resume-item">
+              <p>
+              <ul>
+                <li>Football</li>
+                  <li>Travelling</li> 
+                  <li>Eating</li> 
+                  <li>Coding and Personal Projects</li> 
+                  <li>Learning & Experimenting New Technology</li>
+              </ul>
+              </p>
+            </div>
+            <h3 class="resume-title">References</h3>
+            <div class="resume-item">
+              <p>
+              <ul>
+                <li>
+                  comtechgroup.com.np <br>
+                  01-4523161, 4523057
+                  </li>
+              </ul>
+              </p>
+            </div>
+
+          </div> 
+        </div>
+
       </div>
 
     </div>
@@ -393,6 +491,7 @@
             <div class="social-links">
               <a href="https://www.facebook.com/satkrit.bhandari" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="https://www.instagram.com/its_me_satkrit/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/satkrit-bhandari-a04536322/" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -412,31 +511,6 @@
           </div>
         </div>
       </div>
-<!-- 
-      <form action="https://formsubmit.co/satkrit15@gmail.com" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <input type="hidden" name="_captcha" value="false">
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form> -->
-
     </div>
   </section><!-- End Contact Section -->
   <!-- Vendor JS Files -->
